@@ -1,0 +1,28 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+*{
+  background-color: #d63031;
+}
+.note{
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.navigator{
+  background-color: #2d3436;
+  width: 100%;
+  height: 2rem;
+}
+textarea{
+  width: 100%;
+  height: 100%;
+background-color: #fab1a0;
+  resize: none;
+}
+textarea:focus{
+  border: 0;
+  outline: none;
+}
