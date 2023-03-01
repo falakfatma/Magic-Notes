@@ -18,9 +18,12 @@ add_Btn.addEventListener('click', () => {
 `
     note.querySelector('.trash').addEventListener('click',()=>{
     note.remove()
+    localStorage.removeItem(note.querySelector('textarea').value,note.querySelector('textarea').value)
   })
-    note.querySelector('.save').addEventListener('click',()=>{
-    let tasks = localStorage()
+    note.querySelector('.save').addEventListener('click',(e)=>{
+      e.preventDefault()
+    let tasks = localStorage.setItem(note.querySelector('textarea').value,note.querySelector('textarea').value)
+      console.log( note.querySelector('textarea').value)
     // note.remove()
   })
   document.querySelector('.container').appendChild(note)
@@ -34,12 +37,12 @@ add_Btn.addEventListener('click', () => {
 
 
 // // delete Notes
-function myFun(e){
-    let tasks = localStorage.key(e);
-  let deletedListItem = document.getElementById(tasks);
-  deletedListItem.remove();
-  localStorage.removeItem(objectKey);
-}
+// function myFun(e){
+//     let tasks = localStorage.key(e);
+//   let deletedListItem = document.getElementById(tasks);
+//   deletedListItem.remove();
+//   localStorage.removeItem(objectKey);
+// }
 //   // note.classList.add('note')
 //   console.log(delete_Btn)
 //   console.log(ele)
