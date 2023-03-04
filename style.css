@@ -14,11 +14,12 @@ html {
   margin:1rem;  
 }
 .navigator{
-  background-color:cornflowerblue;
   width: 100%;
   display: flex;
   padding: 0.2rem;
+  padding-bottom: 0.5rem;
   justify-content: flex-end;
+  padding-top: 0.5rem;
 }
  textarea{
   width: 100%;
@@ -39,3 +40,9 @@ textarea:focus{
   font-size: 1rem;
   margin-left: 0.8rem;
 } 
+#heading{
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #dd6e6e;
+}

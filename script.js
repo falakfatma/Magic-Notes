@@ -30,6 +30,8 @@ const addNode = (text = "") => {
       </div>
       <textarea>${text}</textarea>
 `
+   let randomColor = Math.floor(Math.random()*11256).toString(16)
+  note.querySelector('.navigator').style.background ="#" +randomColor;
   note.querySelector('.trash').addEventListener('click', () => {
     note.remove()
     localStorage.removeItem(note.querySelector('textarea').value, note.querySelector('textarea').value)
